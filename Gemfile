@@ -28,10 +28,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :development do
+  gem 'web-console'
+end
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
-  gem 'web-console'
   gem 'spring'
   gem 'minitest-reporters'
   gem 'mini_backtrace'
@@ -43,4 +46,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
